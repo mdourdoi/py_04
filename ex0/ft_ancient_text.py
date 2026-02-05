@@ -5,7 +5,7 @@ def open_ancient_text() -> None:
         print("=== CYBER ARCHIVES - DATA RECOVERY SYSTEM ===")
         print()
         print(f"Accessing Storage Vault: {file_name}")
-        file = open('ancient_fragment.txt')
+        file = open('ancient_fragment.txt', 'r')
         print("Connection established...")
         print()
         for line in file:

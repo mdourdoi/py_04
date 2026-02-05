@@ -4,7 +4,7 @@ def vault_security() -> None:
     print()
     print("Initiating secure vault access...")
     try:
-        file = open('classified_data.txt')
+        file = open('classified_data.txt', 'r')
         print("Vault connection established with failsafe protocols")
         file.close()
         print()
