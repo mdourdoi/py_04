@@ -15,7 +15,14 @@ def test_vault() -> None:
         print()
         print()
         with open("classified_data.txt", 'a') as safe_append:
+            ends_with_newline = False
+            with open("classified_data.txt", "r") as f:
+                content = f.read()
+                if content and content[-1] == "\n":
+                    ends_with_newline = True
             print("SECURE PRESERVATION:")
+            if not ends_with_newline:
+                safe_append.write("\n")
             str_to_add = "[CLASSIFIED] New security protocols archived"
             print(str_to_add)
             safe_append.write(str_to_add)
