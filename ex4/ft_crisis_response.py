@@ -27,7 +27,7 @@ def safe_access_handler(file: str) -> None:
         print(f"STATUS: {cur_error.args[1]}")
 
 
-def ft_crisis_test() -> None:
+def crisis_response() -> None:
     """Tests several files and handles errors"""
     print("===CYBER ARCHIVES - CRISIS RESPONSE SYSTEM ===")
     print()
@@ -39,4 +39,4 @@ def ft_crisis_test() -> None:
 
 
 if __name__ == "__main__":
-    ft_crisis_test()
+    crisis_response()

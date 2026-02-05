@@ -1,4 +1,4 @@
-def test_vault() -> None:
+def vault_security() -> None:
     """Securely opens a file and read/write"""
     print("=== CYBER ARCHIVES - VAULT SECURITY SYSTEM ===")
     print()
@@ -37,4 +37,4 @@ def test_vault() -> None:
 
 
 if __name__ == "__main__":
-    test_vault()
+    vault_security()

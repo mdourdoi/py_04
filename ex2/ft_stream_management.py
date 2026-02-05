@@ -1,7 +1,7 @@
 import sys
 
 
-def ft_test_streams() -> None:
+def stream_management() -> None:
     """Tests stdin, stdout and stderr"""
     print("=== CYBER ARCHIVES - COMMUNICATION SYSTEM ===")
     print()
@@ -18,4 +18,4 @@ def ft_test_streams() -> None:
 
 
 if __name__ == "__main__":
-    ft_test_streams()
+    stream_management()
