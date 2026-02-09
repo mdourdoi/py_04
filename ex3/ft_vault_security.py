@@ -23,4 +23,7 @@ def vault_security() -> None:
 
 
 if __name__ == "__main__":
-    vault_security()
+    try:
+        vault_security()
+    except Exception as cur_error:
+        print(cur_error)
