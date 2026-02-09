@@ -2,7 +2,10 @@ def create_archive() -> None:
     """Creates the archive"""
     print("=== CYBER ARCHIVES - PRESERVATION SYSTEM ===")
     print("Initializing new storage unit: new_discovery.txt")
-    file = open("new_discovery.txt", mode='a')
+    try:
+        file = open("new_discovery.txt", mode='w')
+    except Exception:
+        raise Exception("Cannot create or modify 'new_discovery.txt'")
     print("Storage unit created successfully...")
     print()
     print("Inscribing preservation data...")
@@ -25,4 +28,7 @@ def create_archive() -> None:
 
 
 if __name__ == "__main__":
-    create_archive()
+    try:
+        create_archive()
+    except Exception as cur_error:
+        print(cur_error)
