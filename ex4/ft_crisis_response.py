@@ -12,7 +12,7 @@ def safe_access(file: str) -> None:
         status = "Crisis handled, system stable"
         raise FileNotFoundError(message, status)
     except PermissionError:
-        print(f"CRISIS ALERT: Attempting access to {file}...")
+        print(f"CRISIS ALERT: Attempting access to \'{file}\'...")
         message = "Security protocols deny access"
         status = "Crisis handled, security maintained"
         raise PermissionError(message, status)
@@ -36,6 +36,8 @@ def crisis_response() -> None:
     safe_access_handler("classified_data.txt")
     print()
     safe_access_handler("standard_archive.txt")
+    print()
+    print("All crisis scenarios handled successfully. Archives secure.")
 
 
 if __name__ == "__main__":

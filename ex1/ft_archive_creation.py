@@ -1,6 +1,7 @@
 def create_archive() -> None:
     """Creates the archive"""
     print("=== CYBER ARCHIVES - PRESERVATION SYSTEM ===")
+    print()
     print("Initializing new storage unit: new_discovery.txt")
     try:
         file = open("new_discovery.txt", mode='w')
@@ -20,7 +21,6 @@ def create_archive() -> None:
     file.write("\n")
     print(str3)
     file.write(str3)
-    file.write("\n")
     print()
     file.close()
     print("Data inscription complete. Storage unit sealed.")

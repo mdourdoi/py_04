@@ -10,6 +10,7 @@ def vault_security() -> None:
             print("SECURE EXTRACTION:")
             content = safe_read.read()
             print(content)
+            print()
     except Exception:
         raise Exception("Cannot open 'classified_data.txt'.")
     try:
@@ -17,6 +18,8 @@ def vault_security() -> None:
             print("SECURE PRESERVATION:")
             print("[CLASSIFIED] New security protocols archived")
             safe_write.write("[CLASSIFIED] New security protocols archived")
+            print("Vault automatically sealed upon completion")
+            print()
     except Exception:
         raise Exception("Cannot create or modify 'security_protocols.txt'")
     print("All vault operations completed with maximum security.")

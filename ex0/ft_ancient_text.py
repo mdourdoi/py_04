@@ -11,10 +11,11 @@ def open_ancient_text() -> None:
     print("Connection established...")
     print()
     content = file.read()
+    print("RECOVERED DATA:")
     print(content)
     file.close()
     print()
-    print("Data recovery complete. Storage unit disconnected")
+    print("Data recovery complete. Storage unit disconnected.")
 
 
 if __name__ == "__main__":
